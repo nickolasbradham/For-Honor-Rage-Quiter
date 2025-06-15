@@ -37,7 +37,6 @@ final class Quiter {
 						tap(KeyEvent.VK_V);
 						r.keyRelease(KeyEvent.VK_CONTROL);
 						tap(KeyEvent.VK_ENTER);
-						Thread.sleep(50);
 					} catch (final InterruptedException e1) {
 						e1.printStackTrace();
 					}
@@ -53,7 +52,7 @@ final class Quiter {
 				press(key);
 				r.keyRelease(key);
 			}
-			
+
 			private final void press(final int key) throws InterruptedException {
 				r.keyPress(key);
 				Thread.sleep(WAIT);
